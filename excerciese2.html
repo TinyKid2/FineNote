@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<img id = "pic" src = "images/boy.jpg" alt ="boy">.
+    </div>
+        
+
+	<script>
+		var pic = document.querySelector('#pic');
+        pic.addEventListener("mouseover",changePic,false)
+        pic.addEventListener("mouseout",originpic,false)
+        
+        function changePic(){
+            pic.src = "images/coffee-blue.jpg";
+        }
+        function originpic(){
+            pic.src = "images/boy.jpg";
+        }
+
+
+	</script>
+</body>
+</html>

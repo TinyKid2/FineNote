@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial - scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Greeting</title>
+	<link rel = "stylesheet" href="css/change.css">
+</head>
+<body>
+	<h1>나이계산기</h1>
+
+	태어난 년도 : <input id = 'oPrice' type = "number" placeholder="태어난 연도를 입력하세요" onkeyup=""></input>
+	<br> </br>
+	생일 : <input id = 'rate' type = "number"placeholder="생일을 입력하세요" onkeyup=""></input>
+	<br> </br> 
+	나이 계산 : <button onclick="calc()"></button>
+	<br> </br> 
+	<p id="showResult"></p>
+	
+	<p>계산된 나이: <span id = "discountPrice"></span> 세 </p>
+
+	<script> 
+		function calc(){
+			var birthYear = document.querySelector("#oPrice").value;
+			var birthDay =  document.querySelector("#rate").value
+			// var birthYear = prompt("태어난 연도를 입력하세요.","YYYY");
+			var currentDay = 2024
+			
+			var age;
+
+			age = currentYear + birthYear+1;
+			document.querySelector("#result").innerHTML = "당신의 나이는" + age + "세입니다.";
+		
+		}
+		
+		
+	</script>
+
+
+</body>
+</html>

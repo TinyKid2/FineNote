@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<form action = "">
+            <input type = "text" id = "username" placeholder="이름" required>
+            <button onclick="newRegister();return false">신청</button>
+            <button onclick="checkNameList(); return false">조회</button>
+            <button onclick="checkNameList(document.querySelector('#username').value.trim());return false">검색</button>
+        </form>
+        <hr>
+        <div id = 'result'></div>
+        <hr>
+        <div id = "nameList"></div>
+	</div>
+
+	<script src = "RegisterList.js" defer>
+	
+	</script>
+</body>
+</html>
